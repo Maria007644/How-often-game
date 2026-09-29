@@ -1,0 +1,42 @@
+﻿[
+  {
+    "name": "playroom-v2.png",
+    "prompt": "Use case: stylized-concept. Asset type: full-screen 16:9 background for a cheerful children's English learning game. Create a beautifully rendered welcoming playroom and arcade classroom interior, polished colorful 3D animated movie style, warm sunlight, blue and teal walls, purple accents, golden string lights, wooden floor reflecting soft warm light. Bookshelves, a cheerful arcade cabinet with no lettering, leafy plants and comfy beanbags arranged along the far left and far right edges. Broad open central area for UI cards, uncluttered middle, architectural depth, eye-level view, symmetric balanced composition. The central 75 percent will be covered by two game cards and a title, so put appealing details around the borders. No people. No text, lettering, numbers, logos, watermarks, wheels, UI panels, or title signs. Wide landscape 16:9."
+  },
+  {
+    "name": "alice-portrait.png",
+    "prompt": "Use case: identity-preserve. Edit target: the reference girl Alice. Preserve her exact recognizable face, cheerful smile, warm brown wavy hair, eye color, purple hoodie, white shirt and polished 3D cartoon rendering. Create a LARGE shoulders-up bust portrait, head facing viewer, head and shoulders filling 88% of square canvas, fully visible hair and top of head, crop at upper chest. No hands, no full body, no legs, no added items, no text. Genuinely transparent background with alpha, no white background, no cast shadow. Game character token, crisp clean silhouette."
+  },
+  {
+    "name": "sam-portrait.png",
+    "prompt": "Use case: identity-preserve. Edit target: reference boy Sam. Preserve his exact recognizable face, cheerful smile, tousled brown hair, eyes, green hoodie, white shirt and polished 3D cartoon rendering. Create a LARGE shoulders-up bust portrait, head facing viewer, head and shoulders filling 88% of square canvas, fully visible hair and top of head, crop at upper chest. No hands, no full body, no legs, no added items, no text. Genuinely transparent background with alpha, no white background, no cast shadow. Game character token, crisp clean silhouette."
+  },
+  {
+    "name": "pair-portrait.png",
+    "prompt": "Use case: identity-preserve. Reference images: girl Alice and boy Sam, preserve both recognizable faces, hair, smiling expressions, purple hoodie for girl and green hoodie for boy, polished 3D cartoon style. Create ONE game token depicting these TWO children side by side as LARGE shoulders-up portraits. Both heads equally large, facing viewer, heads close together, hair fully visible, cropped below shoulders. Fill square canvas tightly with both faces and upper shoulders. No full bodies, no hands, no legs, no lettering or accessories. Genuinely transparent alpha background with clean silhouette, no white backdrop or cast shadow."
+  },
+  {
+    "name": "read.png",
+    "prompt": "Use case: stylized-concept. Asset type: one isolated vocabulary icon for a children's English game. Subject: an inviting open storybook with cream pages, thick teal and coral cover, simple colorful picture shapes on its pages but NO written words; represent READ A BOOK. Style: polished colorful 3D animation, friendly rounded forms, realistic soft materials and clean silhouette, matching a bright arcade classroom game. Square canvas. Object fills 85% of canvas; entire object visible, centered, front/three-quarter view, instantly recognizable at small size. Transparent alpha background, no white backdrop, no frame, no floor, no cast shadow. Objects only, no people, no hands, no faces, no lettering, no labels, no logo or watermark."
+  },
+  {
+    "name": "bike.png",
+    "prompt": "Use case: stylized-concept. Asset type: one isolated vocabulary icon for a children's English game. Subject: a cheerful turquoise children’s bicycle in a clear three-quarter side view with two visible wheels, coral handle grips and saddle, simple chunky shapes; represent RIDE A BIKE. Style: polished colorful 3D animation, friendly rounded forms, realistic soft materials and clean silhouette, matching a bright arcade classroom game. Square canvas. Object fills 85% of canvas; entire object visible, centered, front/three-quarter view, instantly recognizable at small size. Transparent alpha background, no white backdrop, no frame, no floor, no cast shadow. Objects only, no people, no hands, no faces, no lettering, no labels, no logo or watermark."
+  },
+  {
+    "name": "football.png",
+    "prompt": "Use case: stylized-concept. Asset type: one isolated vocabulary icon for a children's English game. Subject: a large classic black-and-white football with one bright red football boot beside it; represent PLAY FOOTBALL. Style: polished colorful 3D animation, friendly rounded forms, realistic soft materials and clean silhouette, matching a bright arcade classroom game. Square canvas. Object fills 85% of canvas; entire object visible, centered, front/three-quarter view, instantly recognizable at small size. Transparent alpha background, no white backdrop, no frame, no floor, no cast shadow. Objects only, no people, no hands, no faces, no lettering, no labels, no logo or watermark."
+  },
+  {
+    "name": "music.png",
+    "prompt": "Use case: stylized-concept. Asset type: one isolated vocabulary icon for a children's English game. Subject: a large pair of purple and turquoise over-ear headphones with two small colorful musical note shapes near them; represent LISTEN TO MUSIC. Style: polished colorful 3D animation, friendly rounded forms, realistic soft materials and clean silhouette, matching a bright arcade classroom game. Square canvas. Object fills 85% of canvas; entire object visible, centered, front/three-quarter view, instantly recognizable at small size. Transparent alpha background, no white backdrop, no frame, no floor, no cast shadow. Objects only, no people, no hands, no faces, no lettering, no labels, no logo or watermark."
+  },
+  {
+    "name": "piano.png",
+    "prompt": "Use case: stylized-concept. Asset type: one isolated vocabulary icon for a children's English game. Subject: a cheerful compact upright wooden piano with clearly visible black and white keyboard, teal panels and gold accents, three-quarter front view; represent PLAY THE PIANO. Style: polished colorful 3D animation, friendly rounded forms, realistic soft materials and clean silhouette, matching a bright arcade classroom game. Square canvas. Object fills 85% of canvas; entire object visible, centered, front/three-quarter view, instantly recognizable at small size. Transparent alpha background, no white backdrop, no frame, no floor, no cast shadow. Objects only, no people, no hands, no faces, no lettering, no labels, no logo or watermark."
+  },
+  {
+    "name": "homework.png",
+    "prompt": "Use case: stylized-concept. Asset type: one isolated vocabulary icon for a children's English game. Subject: an open school exercise notebook with a large yellow pencil placed diagonally over it and a small red eraser beside it, simple faint blue ruled lines only, no readable text; represent DO HOMEWORK. Style: polished colorful 3D animation, friendly rounded forms, realistic soft materials and clean silhouette, matching a bright arcade classroom game. Square canvas. Object fills 85% of canvas; entire object visible, centered, front/three-quarter view, instantly recognizable at small size. Transparent alpha background, no white backdrop, no frame, no floor, no cast shadow. Objects only, no people, no hands, no faces, no lettering, no labels, no logo or watermark."
+  }
+]

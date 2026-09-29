@@ -1,0 +1,4 @@
+Open this whole folder in VS Code.
+Then tell the coding assistant:
+
+Read README_FOR_VSCODE.md completely before editing anything. Follow it exactly. Game 1 is approved and must not be redesigned. Rebuild Game 2 from scratch; do not try to fix game2_old_DO_NOT_USE.html. First inspect the existing files/assets, then create the unified index.html project with a start screen and navigation between both games. Test every checklist item in the README before finishing.
