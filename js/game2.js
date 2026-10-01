@@ -5,17 +5,17 @@
     {label:'Sam',image:'sam-portrait',generated:true,subject:'Sam',third:true,possessive:'his'},
     {label:'Alice and Sam',image:'pair-portrait',generated:true,subject:'Alice and Sam',third:false,possessive:'their'},
     {label:'WE',subject:'We',third:false,possessive:'our'},
-    {label:'I',subject:'I',third:false,possessive:'my'}
+    {label:'YOU',subject:'You',third:false,possessive:'your'}
   ];
   const activities=[
     {label:'clean teeth',image:'clean',base:'clean',third:'cleans',object:'teeth'},
     {label:'read a book',image:'read',generated:true,base:'read',third:'reads',object:'a book'},
     {label:'ride a bike',image:'bike',generated:true,base:'ride',third:'rides',object:'a bike'},
     {label:'feed the fish',image:'fish',base:'feed',third:'feeds',object:'the fish'},
-    {label:'have a shower',image:'shower',base:'have',third:'has',object:'a shower'},
+    {label:'write an email',image:'write-email',generated:true,base:'write',third:'writes',object:'an email'},
     {label:'eat burgers',image:'burger',base:'eat',third:'eats',object:'burgers'},
     {label:'play basketball',image:'basket',base:'play',third:'plays',object:'basketball'},
-    {label:'play computer games',image:'games',base:'play',third:'plays',object:'computer games'}
+    {label:'play computer games',image:'computer-games',generated:true,base:'play',third:'plays',object:'computer games'}
   ];
   const frequencies=['always','usually','often','sometimes','rarely','never','once a week','twice a week','every day'].map(label=>({label}));
   const colors=['#ffd04a','#42bef4','#ae7bf1','#68d6aa','#ff9c63','#7bcbef','#ef93bd','#b9df70','#ffcc78'];
@@ -76,7 +76,7 @@
 
   function grammar(person, activity, frequency) {
     const object = activity.image === 'clean' ? `${person.possessive} teeth` : activity.object;
-    const subject = person.subject === 'We' ? 'we' : person.subject;
+    const subject = ['We', 'You'].includes(person.subject) ? person.subject.toLowerCase() : person.subject;
     const question = `How often ${person.third ? 'does' : 'do'} ${subject} ${activity.base} ${object}?`;
     const verb = person.third ? activity.third : activity.base;
     const adverb = ['always','usually','often','sometimes','rarely','never'].includes(frequency);

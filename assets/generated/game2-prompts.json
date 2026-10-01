@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "computer-games.png",
+      "prompt": "Create a colorful 3D illustrated game vocabulary icon: a desktop computer and two game controllers, blue and orange, prominently in front of the monitor. Simple recognizable chunky forms readable at small size. Centered on a transparent background, square image, no text or logos."
+    },
+    {
+      "name": "write-email.png",
+      "prompt": "Create a colorful polished 3D cartoon vocabulary icon representing WRITE AN EMAIL: an open blue laptop, a large white envelope on the screen, and a yellow pencil diagonally beside the envelope to clearly suggest composing a message. Chunky simple recognizable shapes readable at 60px. Compact centered square composition, entire objects visible filling 90% of canvas. Genuinely transparent alpha background. No text, logos, watermark, floor or frame."
+    }
+  ]
+}

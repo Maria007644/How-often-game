@@ -12,8 +12,8 @@ const source = fs.readFileSync(path.join(root, 'games/game1_frequency_machine.ht
 const baseline = JSON.parse(fs.readFileSync(path.join(__dirname, 'game1-design-baseline.json')));
 assert.equal(hash(source.match(/<style>([\s\S]*?)<\/style>/)[1].split('\n/* Larger shoulder portraits;')[0]), baseline.originalStyle);
 assert.equal(hash(Buffer.from(source.match(/background:url\("data:image\/png;base64,([^"\)]+)/)[1], 'base64')), baseline.background);
-const subjects = ['Alice', 'Sam', 'Alice and Sam', 'WE', 'I'];
-const activities = ['clean teeth','read a book','ride a bike','feed the fish','have a shower','eat burgers','play basketball','play computer games'];
+const subjects = ['Alice', 'Sam', 'Alice and Sam', 'WE', 'YOU'];
+const activities = ['clean teeth','read a book','ride a bike','feed the fish','write an email','eat burgers','play basketball','play computer games'];
 const frequencies = ['always','usually','often','sometimes','rarely','never','once a week','twice a week','every day'];
 const errors = [], external = [];
 function track(page) {
@@ -88,9 +88,9 @@ async function round(page,p,a,f) {
       $('#show-answer').click();
     } finally {Math.random=original;}
   },{p,a,f});
-  const subject=['Alice','Sam','Alice and Sam','We','I'][p], qSubject=p===3?'we':subject, poss=['her','his','their','our','my'][p];
-  const base=[`clean ${poss} teeth`,'read a book','ride a bike','feed the fish','have a shower','eat burgers','play basketball','play computer games'];
-  const third=[`cleans ${poss} teeth`,'reads a book','rides a bike','feeds the fish','has a shower','eats burgers','plays basketball','plays computer games'];
+  const subject=['Alice','Sam','Alice and Sam','We','You'][p], qSubject=p>=3?subject.toLowerCase():subject, poss=['her','his','their','our','your'][p];
+  const base=[`clean ${poss} teeth`,'read a book','ride a bike','feed the fish','write an email','eat burgers','play basketball','play computer games'];
+  const third=[`cleans ${poss} teeth`,'reads a book','rides a bike','feeds the fish','writes an email','eats burgers','plays basketball','plays computer games'];
   const phrase=p<2?third[a]:base[a], freq=frequencies[f];
   assert.equal(await page.locator('#question-text').textContent(),`How often ${p<2?'does':'do'} ${qSubject} ${base[a]}?`);
   assert.equal(await page.locator('#answer-text').textContent(),f<6?`${subject} ${freq} ${phrase}.`:`${subject} ${phrase} ${freq}.`);
@@ -161,7 +161,7 @@ async function game1Grammar(frame) {
       await page.emulateMedia({reducedMotion:'reduce'});await round(page,4,2,7);
       await page.screenshot({path:path.join(__dirname,`answer-v4-${viewport.width}.png`)});
       await page.locator('.navigation [data-screen=game1]').click();assert.equal(await frame.locator('#display').textContent(),saved);
-      await page.locator('.navigation [data-screen=game2]').click();assert.equal(await page.locator('#answer-text').textContent(),'I ride a bike twice a week.');
+      await page.locator('.navigation [data-screen=game2]').click();assert.equal(await page.locator('#answer-text').textContent(),'You ride a bike twice a week.');
       if(viewport.width===1366) {
         for(let p=0;p<5;p++) {
           for(let a=0;a<8;a++) for(let f=0;f<9;f++) await round(page,p,a,f);
